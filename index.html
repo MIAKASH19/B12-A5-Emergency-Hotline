@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Remixicon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>B15-A%-Emergency-Hotline</title>
+  </head>
+  <body class="hind-regular overflow-x-hidden">
+    <nav class="px-13 flex items-center justify-between py-4">
+      <div class="flex gap-4 items-center">
+        <img src="./assets/logo.png" class="w-[40px]" alt="logo" />
+        <p class="font-bold w-[50px] leading-none text-[#006747]">
+          Emergency Service
+        </p>
+      </div>
+      <div class="flex items-center gap-3 justify-between">
+        <div
+          class="bg-[#41ff6b1a] font-bold px-6 py-2 rounded-full flex items-center gap-2"
+        >
+          <span>0</span>
+          <img src="./assets/heart.png" class="w-[20px]" alt="" />
+        </div>
+        <div
+          class="bg-[#41ff6b1a] font-bold px-6 py-2 rounded-full flex items-center gap-2"
+        >
+          <span>0</span>
+          <img src="./assets/coin.png" class="w-[20px]" alt="" />
+        </div>
+        <div
+          class="bg-[#00A63E] text-white px-6 py-2 rounded-full flex items-center gap-2"
+        >
+          <span>0</span>
+          Copy
+        </div>
+      </div>
+    </nav>
+    <div
+      class="banner-section bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-[240px] flex items-center justify-center flex-col gap-3 text-white"
+    >
+      <img src="./assets/logo-dark.png" class="w-[90px]" alt="" />
+      <h1 class="text-[40px] font-bold">Emergency Service Directory</h1>
+      <p class="font-semibold">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+
+    <div class="main-section bg-[#F5FFF6] flex gap-5 px-13 py-6">
+      <div class="w-[70%] grid grid-cols-3 gap-5">
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/emergency.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">National Emergency Number</h3>
+          <p class="text-xs text-zinc-600">National Emergency</p>
+          <h1 class="text-2xl font-bold mt-3">999</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >All</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-[#DFEFFF] w-fit p-3">
+              <img
+                src="./assets/police.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Police Helpline Number</h3>
+          <p class="text-xs text-zinc-600">Police</p>
+          <h1 class="text-2xl font-bold mt-3">999</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >Police</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/fire-service.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Fire Service Number</h3>
+          <p class="text-xs text-zinc-600">Fire Service</p>
+          <h1 class="text-2xl font-bold mt-3">999</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >fire</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/ambulance.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Ambulance Service</h3>
+          <p class="text-xs text-zinc-600">Ambulance</p>
+          <h1 class="text-2xl font-bold mt-3">1994-999999</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >health</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/emergency.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Women & Child Helpline</h3>
+          <p class="text-xs text-zinc-600">Women & Child Helpline</p>
+          <h1 class="text-2xl font-bold mt-3">109</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >Help</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/emergency.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Anti-Coruption Helpline</h3>
+          <p class="text-xs text-zinc-600">Anti-Coruption</p>
+          <h1 class="text-2xl font-bold mt-3">106</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >Govt.</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/emergency.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Electricity Helplibe</h3>
+          <p class="text-xs text-zinc-600">Electricity Outage</p>
+          <h1 class="text-2xl font-bold mt-3">16216</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >Electricity</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/emergency.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Brac Helpline</h3>
+          <p class="text-xs text-zinc-600">Brac</p>
+          <h1 class="text-2xl font-bold mt-3">16445</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >NGO</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
+          <div class="flex items-center justify-between">
+            <div class="rounded-xl bg-red-200 w-fit p-3">
+              <img
+                src="./assets/emergency.png"
+                alt="emergency"
+                class="w-[20px]"
+              />
+            </div>
+            <i class="ri-heart-3-line text-2xl"></i>
+          </div>
+          <h3 class="font-bold mt-3">Bangladesh Railway Helpline</h3>
+          <p class="text-xs text-zinc-600">Bangladesh Railway</p>
+          <h1 class="text-2xl font-bold mt-3">163</h1>
+          <span class="bg-zinc-200 text-sm rounded-full w-fit px-3 py-1"
+            >Travel</span
+          >
+          <div class="flex items-center justify-between gap-3 mt-2">
+            <div
+              id="copy-btn"
+              class="border-1 border-zinc-300 gap-1 px-3 py-1 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-file-copy-line"></i>
+              Copy
+            </div>
+            <div
+              id="call-btn"
+              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+            >
+              <i class="ri-phone-line"></i>Call
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow-lg rounded-lg w-[30%] bg-white p-5 ">
+        <div class="flex items-center justify-between ">
+          <div class="hind-regular"><i class="ri-time-line"></i> Call History</div>
+          <button class="bg-[#00A63E] rounded-full text-white text-sm px-4 py-2 ">Clear</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
