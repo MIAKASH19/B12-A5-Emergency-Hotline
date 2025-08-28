@@ -36,13 +36,13 @@
         <div
           class="bg-[#41ff6b1a] font-bold px-6 py-2 rounded-full flex items-center gap-2"
         >
-          <span>0</span>
+          <span id="heart-count">0</span>
           <img src="./assets/heart.png" class="w-[20px]" alt="" />
         </div>
         <div
           class="bg-[#41ff6b1a] font-bold px-6 py-2 rounded-full flex items-center gap-2"
         >
-          <span>0</span>
+          <span id="coin-amount">100</span>
           <img src="./assets/coin.png" class="w-[20px]" alt="" />
         </div>
         <div
@@ -75,7 +75,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">National Emergency Number</h3>
           <p class="text-xs text-zinc-600">National Emergency</p>
@@ -92,8 +92,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -102,13 +101,9 @@
         <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
           <div class="flex items-center justify-between">
             <div class="rounded-xl bg-[#DFEFFF] w-fit p-3">
-              <img
-                src="./assets/police.png"
-                alt="emergency"
-                class="w-[20px]"
-              />
+              <img src="./assets/police.png" alt="emergency" class="w-[20px]" />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Police Helpline Number</h3>
           <p class="text-xs text-zinc-600">Police</p>
@@ -125,8 +120,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -141,7 +135,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Fire Service Number</h3>
           <p class="text-xs text-zinc-600">Fire Service</p>
@@ -158,8 +152,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -174,7 +167,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Ambulance Service</h3>
           <p class="text-xs text-zinc-600">Ambulance</p>
@@ -191,8 +184,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -207,7 +199,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Women & Child Helpline</h3>
           <p class="text-xs text-zinc-600">Women & Child Helpline</p>
@@ -224,8 +216,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -240,7 +231,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Anti-Coruption Helpline</h3>
           <p class="text-xs text-zinc-600">Anti-Coruption</p>
@@ -257,8 +248,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -273,7 +263,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Electricity Helplibe</h3>
           <p class="text-xs text-zinc-600">Electricity Outage</p>
@@ -290,8 +280,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -306,7 +295,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Brac Helpline</h3>
           <p class="text-xs text-zinc-600">Brac</p>
@@ -323,8 +312,7 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
@@ -339,7 +327,7 @@
                 class="w-[20px]"
               />
             </div>
-            <i class="ri-heart-3-line text-2xl"></i>
+            <i class="heart-icon ri-heart-3-line text-2xl"></i>
           </div>
           <h3 class="font-bold mt-3">Bangladesh Railway Helpline</h3>
           <p class="text-xs text-zinc-600">Bangladesh Railway</p>
@@ -356,18 +344,35 @@
               Copy
             </div>
             <div
-              id="call-btn"
-              class="bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
+              class="call-btn bg-[#00A63E] gap-1 text-white px-3 py-2 w-1/2 flex items-center justify-center rounded-lg text-xs"
             >
               <i class="ri-phone-line"></i>Call
             </div>
           </div>
         </div>
       </div>
-      <div class="shadow-lg rounded-lg w-[30%] bg-white p-5 ">
-        <div class="flex items-center justify-between ">
-          <div class="hind-regular"><i class="ri-time-line"></i> Call History</div>
-          <button class="bg-[#00A63E] rounded-full text-white text-sm px-4 py-2 ">Clear</button>
+      <div class="shadow-lg rounded-lg w-[30%] bg-white p-5">
+        <div class="flex items-center justify-between">
+          <div class="hind-regular">
+            <i class="ri-time-line"></i> Call History
+          </div>
+          <button
+            class="bg-[#00A63E] rounded-full text-white text-sm px-4 py-2"
+          >
+            Clear
+          </button>
+        </div>
+
+        <div class="history-container w-full h-full mt-4 flex flex-col gap-3">
+          
+          <div class="history-card text-[14px] bg-gray-100 rounded-lg flex items-center justify-between p-3">
+            <div class="w-fit">
+              <h1 class=" font-bold">National Emergency Number</h1>
+              <p class="text-gray-500">999</p>
+            </div>
+            <p class="text-sm text-black w-fit">12: 13 AM</p>
+          </div>
+
         </div>
       </div>
     </div>
