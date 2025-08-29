@@ -35,24 +35,34 @@ document.querySelectorAll(".call-btn").forEach((callBtn) => {
       alert("You donot have sufficient Balance");
       return;
     }
+    let serviceName =
+      e.target.parentNode.parentNode.querySelector("#service").innerText;
+    let serviceNum =
+      e.target.parentNode.parentNode.querySelector("#service-num").innerText;
+      
     coinAmount -= 20;
     let coin = getElement("#coin-amount");
     coin.innerText = coinAmount;
-    console.log(e);
 
     const data = {
-      name: "CAllED",
-      number: 999,
-      time: new Date().toLocaleTimeString,
+      name: serviceName,
+      number: serviceNum,
+      time: new Date().toLocaleTimeString(),
     };
 
     callHistory.push(data);
+    historyContainer.innerHTML = "";
+    callHistoryGenerator();
+    console.log(
+      e.target.parentNode.parentNode.querySelector("#service").innerText
+    );
   });
 });
 
-for (const data of callHistory) {
-  const div = document.createElement(div);
-  div.innerHTML = `
+function callHistoryGenerator() {
+  for (const data of callHistory) {
+    const div = document.createElement("div");
+    div.innerHTML = `
     <div class="history-card text-[14px] bg-gray-100 rounded-lg flex items-center justify-between p-3">
             <div class="w-fit">
               <h1 class=" font-bold">${data.name}</h1>
@@ -60,5 +70,6 @@ for (const data of callHistory) {
             </div>
             <p class="text-sm text-black w-fit">${data.time}</p>
           </div>`;
-  historyContainer.appendChild(div);
+    historyContainer.appendChild(div);
+  }
 }
