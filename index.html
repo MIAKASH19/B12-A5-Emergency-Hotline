@@ -24,48 +24,48 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>B15-A05-Emergency-Hotline</title>
   </head>
-  <body class="hind-regular overflow-x-hidden">
-    <nav class="px-13 flex items-center justify-between py-4">
-      <div class="flex gap-4 items-center">
+  <body class="hind-regular">
+    <nav class="sm:px-13 px-5 flex items-center justify-between sm:py-4 py-3">
+      <div class="flex sm:gap-4 gap-2 items-center">
         <img src="./assets/logo.png" class="w-[40px]" alt="logo" />
-        <p class="font-bold w-[50px] leading-none text-[#006747]">
+        <p class="font-bold w-[50px] sm:text-lg text-xs leading-none text-[#006747]">
           Emergency Service
         </p>
       </div>
       <div class="flex items-center gap-3 justify-between">
         <div
-          class="bg-[#41ff6b1a] font-bold px-6 py-2 rounded-full flex items-center gap-2"
+          class="bg-[#41ff6b1a] font-bold sm:px-6 px-3 py-2 sm:py-2 rounded-full flex items-center gap-2"
         >
-          <span id="heart-count">0</span>
-          <img src="./assets/heart.png" class="w-[20px]" alt="" />
+          <span id="heart-count" class="text-xs sm:text-lg">0</span>
+          <img src="./assets/heart.png" class="sm:w-[20px] w-[15px]" alt="" />
         </div>
         <div
-          class="bg-[#41ff6b1a] font-bold px-6 py-2 rounded-full flex items-center gap-2"
+          class="bg-[#41ff6b1a] font-bold sm:px-6 px-3 py-2 sm:py-2 rounded-full flex items-center gap-2"
         >
-          <span id="coin-amount">100</span>
-          <img src="./assets/coin.png" class="w-[20px]" alt="" />
+          <span id="coin-amount" class="text-xs sm:text-lg">100</span>
+          <img src="./assets/coin.png" class="sm:w-[20px] w-[15px]" alt="" />
         </div>
         <div
-          class="bg-[#00A63E] text-white px-6 py-2 rounded-full flex items-center gap-2"
+          class="bg-[#00A63E] text-white sm:px-6 px-3 py-2 sm:py-2 rounded-full flex items-center text-xs sm:text-lg gap-2"
         >
-          <span id="copy-counter">0</span>
+          <span id="copy-counter" class="text-xs sm:text-lg">0</span>
           Copy
         </div>
       </div>
     </nav>
     <div
-      class="banner-section bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-[240px] flex items-center justify-center flex-col gap-3 text-white"
+      class="banner-section bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-[240px] flex items-center justify-center flex-col gap-3 text-white sm:px-0 px-5"
     >
-      <img src="./assets/logo-dark.png" class="w-[90px]" alt="" />
-      <h1 class="text-[40px] font-bold">Emergency Service Directory</h1>
-      <p class="font-semibold">
+      <img src="./assets/logo-dark.png" class="sm:w-[90px] w-[60px]" alt="" />
+      <h1 class="sm:text-[40px] text-[25px] font-bold">Emergency Service Directory</h1>
+      <p class="sm:font-semibold font-thin text-sm sm:text-nomal text-center">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
     </div>
 
-    <div class="main-section bg-[#F5FFF6] flex gap-5 px-13 py-6">
-      <div class="w-[70%] grid grid-cols-3 gap-5">
+    <div class="main-section bg-[#F5FFF6] flex sm:flex-row flex-col gap-5 sm:px-13 px-5 py-6">
+      <div class="sm:w-[70%] w-[100%]  grid sm:grid-cols-3 grid-cols-1 mx-auto gap-5">
         <div class="card shadow-lg p-5 bg-white rounded-lg w-[100%] h-[250px]">
           <div class="flex items-center justify-between">
             <div class="rounded-xl bg-red-200 w-fit p-3">
@@ -344,7 +344,7 @@
           </div>
         </div>
       </div>
-      <div class="shadow-lg rounded-lg w-[30%] bg-white p-5">
+      <div class="shadow-lg rounded-lg sm:w-[30%] w-[100%] bg-white p-5">
         <div class="flex items-center justify-between">
           <h2 class="font-semibold">
             <i class="ri-time-line"></i> Call History
